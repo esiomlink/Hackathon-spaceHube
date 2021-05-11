@@ -16,6 +16,7 @@
   width:24rem;
   border:solid white;
   display:ruby-text-container;
+  cursor: pointer;
 }
 .left-menu{
   padding-top:200px;
@@ -25,4 +26,9 @@
 .fas-arrow{
   text-align: right;
   float:right;
+}
+
+.submenu li{
+  font-size:25px;
+  margin-top:7px;
 }
