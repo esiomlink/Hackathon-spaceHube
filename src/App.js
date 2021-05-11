@@ -1,10 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
+import FetchVideos from './components/FetchVideo';
 
 function App() {
   return (
-    <div className="App">
-spacehub
+    <>
+
+      <FetchVideos />
+      <div className="App">
     </div>
+    </>
   );
 }
 
