@@ -1,10 +1,16 @@
 .carousel{
-  position: absolute;
+  position: fixed;
+  background-color: black;
+  padding-top: 150px;
   right:0;
+  top: 0;
   width: 15rem;
-  height: 50rem;
- 
+
 }
+.carousel img{
+  width: 15rem;
+  height:90vh;
+} 
 .alice-carousel__prev-btn-item,
 .alice-carousel__next-btn-item {
   display: none;
@@ -12,9 +18,3 @@
 .alice-carousel__dots {
   display: none;
 }
-.carousel img{
-  width: 15rem;
-  height: 50rem;
-  
-
-} 

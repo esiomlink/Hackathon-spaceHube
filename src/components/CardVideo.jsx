@@ -14,10 +14,12 @@ if (preview){
                     <img src={tmpimg} alt="Actor's name"/>
                 </a>
                 <div className="status">
-                <a href={tmpvid}><h3>Title Video</h3></a>
-                    <span>Autor video</span>
-                    <span>N° views</span>
-                    <span> Date de post de la video</span>
+                <a href={tmpvid}>
+                    <h3 className="name">{preview.data[0].title.split('_').join(' ').split(',').join(' ')}</h3>
+                    </a>
+                    <span>{preview.data[0].photographer}</span>
+                    {preview.data[0].keywords && <ul>{preview.data[0].keywords.filter((e,i)=>i<3).map(e=><li>{e.split('_').join(' ').split(',').join(' ')}</li>)}</ul>}
+                    <span> {preview.data[0].date_created}</span>
                 </div>
             </div>
         </div>
