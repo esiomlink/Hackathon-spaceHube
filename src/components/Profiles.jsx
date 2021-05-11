@@ -1,4 +1,5 @@
 import DisplayProfile from './DisplayProfile';
+import './assets/Profile.css';
 class Actor {
   constructor (name, age, oilLevel, image, films, kilometers){
     this.name = name;
@@ -18,7 +19,7 @@ const gadjet = new Actor("Gad'jett", 34, 16, "http://2.bp.blogspot.com/_i5zS3Wc1
 
 export default function Profile(){
   return (
-  <div>
+  <div className="profile-cards">
     <DisplayProfile {...roboSiffredi} />
     <DisplayProfile {...curiosityX} />
     <DisplayProfile {...rovtsumi} />

@@ -1,0 +1,18 @@
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  width : 90%;
+  align-items: center;
+  padding : 20px;
+
+}
+.profile-image{
+  height : 500px;
+  width : auto;
+}
+.profile-infos{
+padding : 20px;
+}
+.profile-films{
+  padding : 20px;
+}

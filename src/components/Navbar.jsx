@@ -36,7 +36,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link className="left-text-white" to="/">
+          <Link className="left-text-white" to="/Actors">
             Acteurs<i className="fas fa-sort-down fas-arrow"></i>
           </Link>
         </li>

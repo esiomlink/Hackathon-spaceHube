@@ -8,6 +8,8 @@ import Navbar from "./components/Navbar";
 import Subscription from "./components/Subscription";
 import Pub from "./components/Pub.jsx";
 import Log from './views/Log';
+import Profile from './components/Profiles';
+
 function App() {
   const [log, setLog] = useState('');
   const [user, setUser] = useState('Login');
@@ -34,6 +36,10 @@ function App() {
           <Navbar />
           <Route path="/" exact>
             <Home query={query} />
+          </Route>
+          <Navbar />
+          <Route path="/Actors" exact>
+            <Profile/>
           </Route>
           <Route path="/sub" component={Subscription} />
           <LoginContext.Provider
