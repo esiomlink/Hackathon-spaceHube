@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Subscription from "./components/Subscription";
 import Pub from "./components/Pub.jsx";
 function App() {
-  
+
   const [query, setQuery] = useState("");
   const [search, setSearch] = useState("");
 
@@ -17,7 +17,6 @@ function App() {
     setQuery(search);
     setSearch("");
   };
-
   return (
     <>
       <div className="App">

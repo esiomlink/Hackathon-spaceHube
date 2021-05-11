@@ -12,15 +12,11 @@ export default function FetchVideo({search}) {
 
   useEffect(() => {
     fetchApi();
-<<<<<<< HEAD
   }, [page, videos,search]);
-=======
-  }, [page]);
->>>>>>> a1d56b7a26e29e9ba4abb6096296652c4e22bb39
 
 function fetchApi(){
   axios
-  .get(`https://images-api.nasa.gov/search?q=${search}&page=${page}&media_type=video`)
+  .get(`https://images-api.nasa.gov/search?page=${page}&media_type=video&q=${search}`)
   .then((r) => r.data.collection.items)
   .then((r) => setVideos(r));
 }
