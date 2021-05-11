@@ -1,10 +1,11 @@
-import React from 'react';
 import FetchVideo from '../components/FetchVideo.jsx';
 
-const Home = () => {
+
+const Home = ({query}) => {
+
   return (
     <div>
-      <FetchVideo />
+      <FetchVideo {...query} />
     </div>
   );
 }

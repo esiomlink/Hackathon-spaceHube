@@ -1,30 +1,40 @@
 import { useContext } from 'react';
 import LoginContext from '../contexts/LoginContext';
 import './assets/header.css';
+import "./assets/header.css";
 
-function Header() {
 
-  const {  user } = useContext(LoginContext);
+const Header = ({search, handleSearch, handleQuery}) => {
+  const { user } = useContext(LoginContext);
   return (
-    <div className='header'>
-      <div className='logo'>
-        <img className='logo' src='logo' alt='SpaceHub' />
-      </div>
-      <div className='searchbar'>
-        <form class='rechercher' methode='Get' action='rechercher'>
-          <input type='text' placeholder='rechercher'></input>
+    <header className='header'>
+      <img
+        src='http://assets.stickpng.com/images/5842a770a6515b1e0ad75afe.png'
+        alt='SpaceHub'
+      />
+      <div className='leftNav'>
+        <form
+          className='searchbar'
+          methode='Get'
+          action='rechercher'
+          onSubmit={(e) => handleQuery(e, { search })}
+        >
+          <input
+            type='text'
+            placeholder='rechercher'
+            value={search}
+            onChange={(e) => handleSearch(e.target.value)}
+          ></input>
           <button type='submit' className='clickLoop'>
             🔎
           </button>
         </form>
+        <button className='login'>
+          {user}
+        </button>
+        <button className='premium'>Premium</button>
       </div>
-      <div className='login'>
-        <h1>{user}</h1>
-      </div>
-      <div className='premium'>
-        <h1>Premium</h1>
-      </div>
-    </div>
+    </header>
   );
 };
 

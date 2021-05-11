@@ -1,28 +1,41 @@
 import {useState} from 'react';
 import LoginContext from './contexts/LoginContext';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css';
-import Home from './views/Home';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Subscription from './components/Subscription';
-import Pub from './components/Pub.jsx';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./views/Home";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Subscription from "./components/Subscription";
+import Pub from "./components/Pub.jsx";
 import Log from './views/Log';
 function App() {
-  const [log, setLog] = useState('');
+   const [log, setLog] = useState('');
   const [user, setUser] = useState('Login');
-    console.log(user)
-  console.log(log)
+  const [query, setQuery] = useState("");
+  const [search, setSearch] = useState("");
+
+  const handleSearch = (newValue) => setSearch(newValue);
+  const handleQuery = (e, search) => {
+    e.preventDefault();
+    setQuery(search);
+    setSearch("");
+  };
   return (
     <>
-      <div className='App'>
+      <div className="App">
         <Router>
-          <LoginContext.Provider value={{ user: user }}>
-            <Header />
+        <LoginContext.Provider value={{ user: user }}>
+          <Header
+            search={search}
+            handleSearch={handleSearch}
+            handleQuery={handleQuery}
+          />
           </LoginContext.Provider>
           <Navbar />
-          <Route path='/' exact component={Home} />
-          <Route path='/sub' component={Subscription} />
+          <Route path="/" exact>
+            <Home query={query} />
+          </Route>
+          <Route path="/sub" component={Subscription} />
           <LoginContext.Provider
             value={{ log: log, setLog: setLog, setUser: setUser }}
           >
