@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
 .cardContainer {
     height: 200px;
     width: 100%;
@@ -31,10 +33,9 @@
     margin-left: 1rem;
 }
 h3 {
-    font-family: 'Roboto';
     font-size: 1rem;
 }
 p, span {
-    color: lightslategray;
+    color: rgb(138, 133, 133);
     font-size: 0.8rem;
 }

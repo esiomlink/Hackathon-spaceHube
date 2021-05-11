@@ -1,11 +1,12 @@
 .gridVideo{
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 200px);
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 20%);
     grid-template-rows: repeat(3, auto);
     grid-gap: 10px;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     
     color: black;
 }
