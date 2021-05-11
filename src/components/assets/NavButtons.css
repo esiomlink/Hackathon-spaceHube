@@ -1,0 +1,13 @@
+.button-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.button-container p{
+  margin-top: 2rem;
+}
+.buttons{
+  width: 5rem;
+  height: 2rem;
+  margin: 2rem;
+}

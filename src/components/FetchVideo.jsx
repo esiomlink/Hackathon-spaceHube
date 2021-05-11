@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import CardVideo from './CardVideo';
 import './assets/FetchVideo.css';
+import './assets/NavButtons.css';
 import NavButton from "./NavButtons";
 
 export default function FetchVideo() {
@@ -21,14 +22,14 @@ function fetchApi(){
 
   if (videos){
     return (
-    <>
-      <div className="gridVideo">
-        <div >
-          <NavButton page={page} setPage={setPage} />
+      <>
+          <div className='button-container'>
+            <NavButton page={page} setPage={setPage} />
+          </div>
+        <div className='gridVideo'>
+          {videos && videos.map((e) => <CardVideo preview={e} />)}
         </div>
-        {(videos && videos.map((e) => <CardVideo preview={e}/>))}
-      </div>
-    </>
+      </>
     );
   }else return <p>loading</p>;
 }
