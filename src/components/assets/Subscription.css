@@ -8,12 +8,15 @@
 .subscription .first-offer{
     background-color: black;
     width: 27%;
+    margin-right:-26rem;
+    margin-left: 1rem;
 
 }
 
 .subscription .second-offer{
     background-color: black;
     width:27%;
+    margin-right: -12rem;
 }
 
 .subscription h1{
