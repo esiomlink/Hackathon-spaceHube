@@ -2,8 +2,13 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 .App{
-    background-color: blueviolet;
-    box-sizing: content-box;
+    background-color: #181818;
+}
+.mainWrap{
+    display: flex;
+    flex-direction: column;
 }

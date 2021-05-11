@@ -8,17 +8,14 @@ if (preview){
     
     return (
         <div className="cardContainer">
-            <div 
-                className="preview" 
-                style={{background: `url(${tmpimg}) center`, backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% 100%'}}>
-        <p>{tmpimg}</p>
-            </div>
+             <a href={tmpvid}><img src={tmpimg} className="preview" alt={tmpimg}/></a> 
             <div className="infoCard">
-                <img src={tmpimg} alt="Actor's name"/>
+                <a href="#">
+                    <img src={tmpimg} alt="Actor's name"/>
+                </a>
                 <div className="status">
                 <a href={tmpvid}><h3>Title Video</h3></a>
-                    <p>Autor video</p>
+                    <span>Autor video</span>
                     <span>N° views</span>
                     <span> Date de post de la video</span>
                 </div>

@@ -1,0 +1,16 @@
+.gridVideo{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: flex-start;
+    
+    color: black;
+}
+a{
+    text-decoration: none;
+    color:black;
+}

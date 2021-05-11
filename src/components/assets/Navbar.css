@@ -1,8 +1,8 @@
 .navbar-left{
   font-size : 2rem;
-  width:300px;
-  float:left;
+  width:20%;
   position:fixed;
+  top:-50px;
   height: 100%;
   background:black;
   color:white;
