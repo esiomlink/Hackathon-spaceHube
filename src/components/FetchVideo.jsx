@@ -4,17 +4,18 @@ import CardVideo from './CardVideo';
 import './assets/FetchVideo.css';
 import NavButton from "./NavButtons";
 
-export default function FetchVideo() {
+export default function FetchVideo({search}) {
   const [videos, setVideos] = useState();
   const [page, setPage] = useState(1);
+ 
 
   useEffect(() => {
     fetchApi();
-  }, [page, videos]);
+  }, [page, videos,search]);
 
 function fetchApi(){
   axios
-  .get(`https://images-api.nasa.gov/search?page=${page}&media_type=video`)
+  .get(`https://images-api.nasa.gov/search?q=${search}&page=${page}&media_type=video`)
   .then((r) => r.data.collection.items)
   .then((r) => setVideos(r));
 }

@@ -1,13 +1,13 @@
-import React from 'react';
 import Pub from '../components/Pub.jsx';
 import FetchVideo from '../components/FetchVideo.jsx';
 
 
-const Home = () => {
+const Home = ({query}) => {
+
   return (
     <div>
       <Pub />
-      <FetchVideo />
+      <FetchVideo {...query} />
     </div>
   );
 }

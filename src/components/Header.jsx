@@ -1,15 +1,16 @@
-import React, { useState } from "react";
 import "./assets/header.css";
 
 
-const Header = () => {
-  
+const Header = ({search, handleSearch, handleQuery}) => {
+
   return (
+
     <header className="header">
       <img src="http://assets.stickpng.com/images/5842a770a6515b1e0ad75afe.png" alt="SpaceHub" />
       <div className='leftNav'>
-        <form className="searchbar" methode="Get" action="rechercher">
-            <input type="text" placeholder="rechercher"></input>
+        <form className="searchbar" methode="Get" action="rechercher" 
+        onSubmit={(e)=> handleQuery(e, {search})}>
+          <input type="text" placeholder="rechercher" value={search} onChange={(e)=>handleSearch(e.target.value)}></input>
             <button type="submit" className="clickLoop">🔎</button>
         </form>
         <button className="login">
