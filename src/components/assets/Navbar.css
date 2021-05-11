@@ -1,0 +1,14 @@
+.navbar-left{
+  font-size : 2rem;
+  width:300px;
+  float:left;
+  position:fixed;
+  height: 100%;
+  background:black;
+  color:white;
+  padding : 10px;
+}
+.left-text-white{
+  text-decoration: none;
+  color:white;
+}
