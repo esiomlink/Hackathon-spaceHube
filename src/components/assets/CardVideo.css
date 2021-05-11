@@ -1,0 +1,40 @@
+.cardContainer {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    margin: 2rem;
+}
+.preview {
+    height: 150px;
+    width: 100%;
+}
+.infoCard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+.infoCard img {
+    height:50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.status{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 50px;
+    margin-left: 1rem;
+}
+h3 {
+    font-size: 1rem;
+}
+p {
+    font-size: 0.8rem;
+}
+span {
+    font-size: 0.5rem;
+}
