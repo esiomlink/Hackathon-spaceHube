@@ -2,14 +2,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./views/Home";
 import Header from "./components/Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Subscription from "./components/Subscription";
 import Pub from "./components/Pub.jsx";
 function App() {
 
-  const [query, setQuery] = useState("");
   const [search, setSearch] = useState("");
+  const [query, setQuery] = useState({search});
 
   const handleSearch = (newValue) => setSearch(newValue);
   const handleQuery = (e, search) => {
