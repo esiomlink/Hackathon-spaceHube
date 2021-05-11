@@ -1,24 +1,27 @@
-import React from "react";
 import "./assets/header.css";
 
-const header = () => (
-  <div className="header">
-    <div className="logo">
-      <img className="logo" src="logo" alt="SpaceHub" />
-    </div>
-    <div className="searchbar">
-      <form class="rechercher" methode="Get" action="rechercher">
-        <input type="text" placeholder="rechercher"></input>
-        <button type="submit" className="clickLoop">🔎</button>
-      </form>
-    </div>
-    <div className="login">
-      <h1>Log in</h1>
-    </div>
-    <div className="premium">
-      <h1>Premium</h1>
-    </div>
-  </div>
-);
 
-export default header;
+const Header = ({search, handleSearch, handleQuery}) => {
+
+  return (
+
+    <header className="header">
+      <img src="http://assets.stickpng.com/images/5842a770a6515b1e0ad75afe.png" alt="SpaceHub" />
+      <div className='leftNav'>
+        <form className="searchbar" methode="Get" action="rechercher" 
+        onSubmit={(e)=> handleQuery(e, {search})}>
+          <input type="text" placeholder="rechercher" value={search} onChange={(e)=>handleSearch(e.target.value)}></input>
+            <button type="submit" className="clickLoop">🔎</button>
+        </form>
+        <button className="login">
+          Log In
+        </button>
+        <button className="premium">
+          Premium
+        </button>
+      </div>
+    </header>
+  )
+};
+
+export default Header;
