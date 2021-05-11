@@ -4,6 +4,7 @@ import './App.css';
 import Home from './views/Home';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Subscription from './components/Subscription';
 function App() {
   return (
     <>
@@ -12,9 +13,9 @@ function App() {
         <Header />
         <Navbar />
         <Route path='/' exact component={Home} />
+        <Route path='/sub' component={Subscription} />
 {/*         <Route path='/jeux' exact component={Carousel} /> */}
       </Router>
-
     </div>
     </>
   );
