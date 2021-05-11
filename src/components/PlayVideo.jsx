@@ -1,13 +1,16 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import { useParams } from 'react-router-dom';
 import "./assets/playvideo.css";
 
 function Playvideo() {
+  let { video } = useParams();
+  console.log(video)
   return (
     <div className="mainWrap">
       <div className="wrapper">
         <ReactPlayer
-          url="https://images-assets.nasa.gov/video/Dragon%20Downlink/Dragon%20Downlink~medium.mp4"
+          url="https://images-assets.nasa.gov/video/JPL-20200617-M2020f-0002-L-30%20Perseverance%20Video%20File/JPL-20200617-M2020f-0002-L-30%20Perseverance%20Video%20File~medium.mp4"
           controls="true"
           wrapper="div"
           playing
