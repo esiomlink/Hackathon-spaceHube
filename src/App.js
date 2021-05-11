@@ -12,7 +12,6 @@ function App() {
     <div className='App'>
           
       <Router>
-          <Header />
         <Route path='/' exact component={Home} />
 {/*         <Route path='/jeux' exact component={Carousel} /> */}
       </Router>
