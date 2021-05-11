@@ -12,6 +12,16 @@
     height: 150px;
     width: 100%;
 }
+.keywords{
+display:flex;
+flex-wrap: wrap;
+font-size: 0.7rem;
+}
+.keywords li{
+    border:solid 1px gray;
+    padding: 0.1rem;
+    list-style: none;
+}
 .name{
     flex-wrap: wrap;
     max-width : 250px;

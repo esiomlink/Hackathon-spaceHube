@@ -18,7 +18,10 @@ if (preview){
                     <h3 className="name">{preview.data[0].title.split('_').join(' ').split(',').join(' ')}</h3>
                     </a>
                     <span>{preview.data[0].photographer}</span>
-                    {preview.data[0].keywords && <ul>{preview.data[0].keywords.filter((e,i)=>i<3).map(e=><li>{e.split('_').join(' ').split(',').join(' ')}</li>)}</ul>}
+                        {preview.data[0].keywords && 
+                            <ul className="keywords">{preview.data[0].keywords.filter((e,i)=>i<3).map(e=>
+                                <li>{e.split('_').join(' ').split(',').join(' ')}</li>)}
+                            </ul>}
                     <span> {preview.data[0].date_created}</span>
                 </div>
             </div>
