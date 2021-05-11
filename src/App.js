@@ -2,14 +2,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./views/Home";
 import Header from "./components/Header";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Subscription from "./components/Subscription";
 import Pub from "./components/Pub.jsx";
+import Playvideo from "./components/PlayVideo";
 function App() {
-
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState({search});
+  const [query, setQuery] = useState({ search });
 
   const handleSearch = (newValue) => setSearch(newValue);
   const handleQuery = (e, search) => {
@@ -26,12 +26,15 @@ function App() {
             handleSearch={handleSearch}
             handleQuery={handleQuery}
           />
-          <Navbar />
-          <Route path="/" exact>
-            <Home query={query} />
-          </Route>
-          <Route path="/sub" component={Subscription} />
-          <Pub />
+          <div className="mainWrap">
+            <Navbar />
+            <Route path="/" exact>
+              <Home query={query} />
+            </Route>
+            <Route path="/sub" component={Subscription} />
+            <Route path="/play/:video" component={Playvideo} />
+            <Pub />
+          </div>
         </Router>
       </div>
     </>
