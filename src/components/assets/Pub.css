@@ -1,0 +1,20 @@
+.carousel{
+  position: absolute;
+  right:0;
+  width: 15rem;
+  height: 50rem;
+ 
+}
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  display: none;
+}
+.alice-carousel__dots {
+  display: none;
+}
+.carousel img{
+  width: 15rem;
+  height: 50rem;
+  
+
+} 
