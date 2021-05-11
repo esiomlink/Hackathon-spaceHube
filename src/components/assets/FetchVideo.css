@@ -1,0 +1,15 @@
+.gridVideo{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    
+    color: black;
+}
+a{
+    text-decoration: none;
+    color:black;
+}

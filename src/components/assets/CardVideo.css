@@ -1,5 +1,6 @@
 .cardContainer {
-    height: 40%;
+    height: 200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background: transparent;
@@ -17,9 +18,10 @@
     padding: 0.5rem;
 }
 .infoCard img {
-    height:50px;
-    width: 50px;
-    border-radius: 50px;
+    height:40px;
+    width: 40px;
+    border-radius: 40px;
+    align-self: flex-start;
 }
 .status{
     display: flex;
@@ -29,11 +31,10 @@
     margin-left: 1rem;
 }
 h3 {
+    font-family: 'Roboto';
     font-size: 1rem;
 }
-p {
+p, span {
+    color: lightslategray;
     font-size: 0.8rem;
-}
-span {
-    font-size: 0.5rem;
 }
