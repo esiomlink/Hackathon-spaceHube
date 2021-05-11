@@ -6,12 +6,15 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+     z-index: 1000;
+   
 }
 .header img{
     height: 3rem;
     width: auto;
     align-self: flex-start;
     margin: auto 0;
+     z-index: 10;
 }
 
 .header h1 {
@@ -19,11 +22,13 @@
     text-align: center;
     margin:auto;
     margin-top:-5px;
+     z-index: 10;
 }
 .leftNav{
     display: flex;
     justify-content: space-evenly;
     width: 40%;
+     z-index: 10;
 }
 .searchbar{
     display: flex;

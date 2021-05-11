@@ -12,8 +12,17 @@
 .left-text-white{
   text-decoration: none;
   color:white;
+  display:inline-block;
+  width:24rem;
+  border:solid white;
+  display:ruby-text-container;
 }
 .left-menu{
   padding-top:200px;
   list-style:none;
+}
+
+.fas-arrow{
+  text-align: right;
+  float:right;
 }

@@ -1,13 +1,25 @@
+import {useState} from 'react';
+import LoginContext from './contexts/LoginContext';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./views/Home";
 import Header from "./components/Header";
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
+=======
+>>>>>>> 88e9e51f7e0e20cea0026c11ed9596c10cffe56b
 import Navbar from "./components/Navbar";
 import Subscription from "./components/Subscription";
 import Pub from "./components/Pub.jsx";
+import Log from './views/Log';
 function App() {
+<<<<<<< HEAD
 
+=======
+   const [log, setLog] = useState('');
+  const [user, setUser] = useState('Login');
+  const [query, setQuery] = useState("");
+>>>>>>> 88e9e51f7e0e20cea0026c11ed9596c10cffe56b
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState({search});
 
@@ -21,16 +33,23 @@ function App() {
     <>
       <div className="App">
         <Router>
+        <LoginContext.Provider value={{ user: user }}>
           <Header
             search={search}
             handleSearch={handleSearch}
             handleQuery={handleQuery}
           />
+          </LoginContext.Provider>
           <Navbar />
           <Route path="/" exact>
             <Home query={query} />
           </Route>
           <Route path="/sub" component={Subscription} />
+          <LoginContext.Provider
+            value={{ log: log, setLog: setLog, setUser: setUser }}
+          >
+            <Route path='/log' component={Log} />
+          </LoginContext.Provider>
           <Pub />
         </Router>
       </div>
