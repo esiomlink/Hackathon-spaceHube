@@ -4,7 +4,7 @@ import "./assets/header.css";
 const header = () => (
   <div className="header">
     <div className="logo">
-      <img className="logo" src="logo" alt="SpaceHub" />
+      <img src="http://assets.stickpng.com/images/5842a770a6515b1e0ad75afe.png" alt="SpaceHub" />
     </div>
     <div className="searchbar">
       <form class="rechercher" methode="Get" action="rechercher">
