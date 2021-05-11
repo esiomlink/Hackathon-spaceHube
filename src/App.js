@@ -4,13 +4,10 @@ import './App.css';
 
 import Home from './views/Home';
 import Navbar from './components/Navbar';
-
-
 function App() {
   return (
     <>
     <div className='App'>
-          
       <Router>
         <Route path='/' exact component={Home} />
 {/*         <Route path='/jeux' exact component={Carousel} /> */}

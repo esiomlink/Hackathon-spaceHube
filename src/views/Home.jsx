@@ -11,7 +11,7 @@ const Home = () => {
       <Header />
       <Navbar />
       <Pub />
-      <FetchVideo/>
+      <FetchVideo />
     </div>
   );
 }
