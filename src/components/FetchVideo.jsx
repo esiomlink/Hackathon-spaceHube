@@ -10,7 +10,7 @@ export default function FetchVideo() {
 
   useEffect(() => {
     fetchApi();
-  }, [page, videos]);
+  }, [page]);
 
 function fetchApi(){
   axios
