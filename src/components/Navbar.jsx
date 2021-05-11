@@ -5,10 +5,10 @@ export default function Navbar(){
   return(
     <nav className="navbar-left">
       <ul> 
-        <li><Link className="left-text-white" to="/">Categories</Link ></li>
-        <li><Link className="left-text-white" to="/">Latest Videos</Link ></li>
-        <li><Link className="left-text-white" to="/">Premium Videos</Link ></li>
-        <li><Link className="left-text-white" to="/">Actors</Link ></li>
+        <li><Link className="left-text-white" to="/">Catégories</Link ></li>
+        <li><Link className="left-text-white" to="/">Dernières Vidéos</Link ></li>
+        <li><Link className="left-text-white" to="/">Vidéos Premium</Link ></li>
+        <li><Link className="left-text-white" to="/">Acteurs</Link ></li>
       </ul>
     </nav>
   )
