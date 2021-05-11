@@ -7,6 +7,8 @@
 }
 .App{
     background-color: #181818;
+}
+.mainWrap{
     display: flex;
     flex-direction: column;
 }
