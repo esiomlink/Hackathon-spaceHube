@@ -3,7 +3,6 @@ import "./assets/header.css";
 
 
 const Header = () => {
-  const [search, setSearch] = useState("");
   
   return (
     <header className="header">
