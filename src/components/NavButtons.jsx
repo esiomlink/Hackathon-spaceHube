@@ -9,9 +9,17 @@ export default function NavButton({page, setPage}) {
   
   return (
     <>
-      <button type="submit" className ="buttons" onClick={accu}>next</button>
-        <p>{page}</p>
-      <button type="submit" className ="buttons" onClick={decc}>prev</button>
+      <div>
+        <button type='submit' className='buttons' onClick={decc}>
+          prev
+        </button>
+      </div>
+      <p>{page}</p>
+      <div>
+        <button type='submit' className='buttons' onClick={accu}>
+          next
+        </button>
+      </div>
     </>
   );
 }
