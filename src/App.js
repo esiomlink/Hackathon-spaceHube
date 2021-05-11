@@ -1,10 +1,14 @@
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Home from './views/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
+    <div className='App'>
+      <Router>
+        <Route path='/' exact component={Home} />
+{/*         <Route path='/jeux' exact component={Carousel} /> */}
+      </Router>
     </div>
   );
 }

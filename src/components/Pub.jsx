@@ -1,6 +1,6 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import './Pub.css'
+import './assets/Pub.css'
 import img1 from '../img/1.png';
 import img2 from '../img/2.png';
 import img3 from '../img/3.png';
