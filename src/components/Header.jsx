@@ -8,7 +8,7 @@ const Header = ({ search, handleSearch, handleQuery }) => {
   const { user } = useContext(LoginContext);
   return (
     <header className='header'>
-      <img src='/logo.png' alt='SpaceHub' />
+      <Link to='/'><img src='/logo.png' alt='SpaceHub' /></Link>
       <div className='leftNav'>
         <form
           className='searchbar'
