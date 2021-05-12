@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./assets/Navbar.css";
 
 export default function Navbar() {
-  const [showcategories, setShowCategories] = useState(false);
+  const [showCategories, setShowCategories] = useState(false);
 
   const handleCategoriesClick = () => {
-    setShowCategories(!showcategories);
+    setShowCategories(!showCategories);
   };
 
   return (
@@ -16,7 +16,7 @@ export default function Navbar() {
           <a className="left-text-white" onClick={handleCategoriesClick}>
             Catégories <i className="fas fa-sort-down fas-arrow" />
           </a>
-          {showcategories ? (
+          {showCategories ? (
             <ul className="submenu">
               <li>Gros Réservoirs</li>
               <li>RILF</li>
@@ -27,17 +27,19 @@ export default function Navbar() {
         </li>
         <li>
           <Link className="left-text-white" to="/">
-            Dernières Vidéos<i className="fas fa-sort-down fas-arrow"></i>
+            Dernières Vidéos
           </Link>
         </li>
         <li>
           <Link className="left-text-white" to="/">
-            Vidéos Premium<i className="fas fa-sort-down fas-arrow"></i>
+            Vidéos Premium
           </Link>
         </li>
         <li>
-          <Link className="left-text-white" to="/Actors">
-            Acteurs<i className="fas fa-sort-down fas-arrow"></i>
+
+          <Link className="left-text-white" to="/">
+            Acteurs
+
           </Link>
         </li>
       </ul>

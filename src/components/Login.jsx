@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import LoginContext from '../contexts/LoginContext';
+import { Link } from 'react-router-dom';
 import './assets/Login.css';
 
 const Login = () => {
@@ -11,7 +12,7 @@ const Login = () => {
     <div className='container-user'>
       <div className='user'>
         <h1>Connexion membre</h1>
-        <h4>Accédez à votre compte Pornhub ou Pornhub Premium</h4>
+        <h4>Accédez à votre compte Spacehub ou Spacehub Premium</h4>
         <div className='nom'>
           <input
             placeholder="Nom d'utilisateur"
@@ -33,12 +34,15 @@ const Login = () => {
             minlength='4'
             maxlength='8'
             size='10'
+            required
           />
         </div>
         <div className='password'>
-          <button type='button' onClick={onclique}>
-            Se connecter
-          </button>
+          <Link className='password' to='/'>
+            <button type='button' onClick={onclique}>
+              Se connecter
+            </button>
+          </Link>
         </div>
       </div>
     </div>

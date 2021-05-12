@@ -6,7 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-     z-index: 1000;
+    position: relative;
+     z-index: 10;
+    padding-left: 1.5rem;
    
 }
 .header img{
@@ -14,7 +16,6 @@
     width: auto;
     align-self: flex-start;
     margin: auto 0;
-     z-index: 10;
 }
 
 .header h1 {
@@ -22,13 +23,11 @@
     text-align: center;
     margin:auto;
     margin-top:-5px;
-     z-index: 10;
 }
 .leftNav{
     display: flex;
     justify-content: space-evenly;
     width: 40%;
-     z-index: 10;
 }
 .searchbar{
     display: flex;
@@ -42,6 +41,7 @@
     margin: auto 0;
     padding: 1rem;
     color: black;
+
 }
 .clickLoop{
     background-color:#fff;
@@ -60,12 +60,12 @@
     margin: auto 0;
     border: none;
     color: white;
-    padding: 0.5rem 1.4rem;
+    padding: 0.25rem 1.2rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     font-size: 1rem;
-
+    cursor: pointer;
 }
 
 .premium{
@@ -79,9 +79,10 @@
     margin: auto 0;
     border: none;
     color: white;
-    padding: 0.5rem 1.4rem;
+    padding: 0.25rem 1.2rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     font-size: 1rem;
+        cursor: pointer;
 }
