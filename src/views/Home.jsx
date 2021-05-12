@@ -1,11 +1,13 @@
+import React, { useContext } from 'react';
 import FetchVideo from '../components/FetchVideo.jsx';
-const Home = ({query}) => {
-
+import LoginContext from '../contexts/LoginContext';
+const Home = ({ query }) => {
+  const { isMageur, setIsMageur } = useContext(LoginContext);
   return (
     <div>
-      <FetchVideo {...query} />
+      <FetchVideo {...query} isMageur={isMageur} setIsMageur={setIsMageur} />
     </div>
   );
-}
+};
 
 export default Home;

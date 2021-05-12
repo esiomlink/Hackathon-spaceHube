@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 import './assets/Login.css';
 
 const Login = () => {
-  const { log, setLog, setUser } = useContext(LoginContext);
+  const { log, setLog, setUser, setIsMageur } = useContext(LoginContext);
   function onclique() {
     setUser(log)
+    setIsMageur(false)
   }
   return (
     <div className='container-user'>

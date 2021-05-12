@@ -17,6 +17,7 @@ function App() {
   const [user, setUser] = useState('Login');
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState({ search });
+  const [isMageur, setIsMageur] = useState(true);
 
   const handleSearch = (newValue) => setSearch(newValue);
   const handleQuery = (e, search) => {
@@ -26,35 +27,50 @@ function App() {
   };
   return (
     <>
-      <div className="App">
+      <div className='App'>
         <Router>
-        <LoginContext.Provider value={{ user: user }}>
-          <Header
-            search={search}
-            handleSearch={handleSearch}
-            handleQuery={handleQuery}
-          />
+          <LoginContext.Provider value={{ user: user }}>
+            <Header
+              search={search}
+              handleSearch={handleSearch}
+              handleQuery={handleQuery}
+            />
           </LoginContext.Provider>
-          <div className="mainWrap">
+          <div className='mainWrap'>
             <Navbar />
-            <Route path="/" exact>
-              <Home query={query} />
-            </Route>
-            <Route path="/Actors" exact>
-            <Profile/>
-          </Route>
-            <Route path="/sub" component={Subscription} />
             <LoginContext.Provider
-              value={{ log: log, setLog: setLog, setUser: setUser }}
+              value={{
+                setIsMageur: setIsMageur,
+                isMageur: isMageur,
+              }}
+            >
+              <Route path='/' exact>
+                <Home query={query} />
+              </Route>
+            </LoginContext.Provider>
+            <Route path='/Actors' exact>
+              <Profile />
+            </Route>
+            <Route path='/sub' component={Subscription} />
+            <LoginContext.Provider
+              value={{
+                log: log,
+                setLog: setLog,
+                setUser: setUser,
+                setIsMageur: setIsMageur,
+              }}
             >
               <Route path='/log' component={Log} />
             </LoginContext.Provider>
             <Pub />
-            <Route path="/play/:id/:title/:autor/:date/:keywords" component={Playvideo} />
-            <Route path="/category/:cat">
+            <Route
+              path='/play/:id/:title/:autor/:date/:keywords'
+              component={Playvideo}
+            />
+            <Route path='/category/:cat'>
               <Category />
             </Route>
-            <Route path="/premium/:cat">
+            <Route path='/premium/:cat'>
               <Category />
             </Route>
           </div>
