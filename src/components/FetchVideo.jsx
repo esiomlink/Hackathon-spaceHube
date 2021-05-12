@@ -31,7 +31,7 @@ function fetchApi(){
         {isMageur && (
           <div className='blur'>
             <div className='majeur'>
-              <h1>SpaceHub est un site Internet réservé aux robots mature !</h1>
+              <h1>SpaceHub est un site Internet réservé aux robots adultes !</h1>
               <h2>
                 SpaceHub est strictement limité aux rovers de plus de 18 ans ou
                 ayant l'âge légal dans votre juridiction, l'âge le plus élevé
