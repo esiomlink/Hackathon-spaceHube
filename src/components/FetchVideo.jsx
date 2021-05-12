@@ -50,6 +50,9 @@ function fetchApi(){
         <div className='gridVideo'>
           {videos && videos.map((e) => <CardVideo preview={e} />)}
         </div>
+        <div className='button-container'>
+          <NavButton page={page} setPage={setPage} />
+        </div>
       </>
     );
   }else return <p>loading</p>;
