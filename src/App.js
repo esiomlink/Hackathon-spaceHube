@@ -45,6 +45,7 @@ function App() {
             </LoginContext.Provider>
             <Pub />
             <Route path="/play/:id/:title/:autor/:date/:keywords" component={Playvideo} />
+          </div>
         </Router>
       </div>
     </>
