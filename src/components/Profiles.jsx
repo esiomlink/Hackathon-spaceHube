@@ -25,7 +25,7 @@ const roboSiffredi = new Actor(
   [
     "Pas encore vidangé",
     "Le plus dur est derrière toi",
-    `la perceuse a perdu ses roulements`,
+    "La perceuse a perdu ses roulements",
   ],
   135000
 );
@@ -36,7 +36,7 @@ const curiosityX = new Actor(
   img2,
   [
     "Ca dérouille !",
-    "un peu de WD40 ?", 
+    "Un peu de WD40 ?", 
     "Slip, tongues et chenilles huilées"
   ],
   114000
@@ -48,8 +48,8 @@ const rovtsumi = new Actor(
   img3,
   [
     "Faut que ça grince !",
-    "j'ai pas la vie d'ange",
-    "rot vert",
+    "J'ai pas la vie d'ange",
+    "Rot vert",
   ],
   98000
 );
@@ -60,8 +60,8 @@ const walleX = new Actor(
   img4,
   [
     "J'ai pété ton silent-bloc",
-    "change les amortisseurs",
-    "visite moi l'caillou",
+    "Change les amortisseurs",
+    "Visite moi l'caillou",
   ],
   45000
 );
@@ -72,8 +72,8 @@ const gadjet = new Actor(
   img5,
   [
     "J'ai des bornes au compteur",
-    "change de carrossier",
-    "t'auras vu Mars, visite moi la Lune",
+    "Change de carrossier",
+    "T'auras vu Mars, visite moi la Lune",
   ],
   66000
 );
