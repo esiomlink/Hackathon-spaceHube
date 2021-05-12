@@ -1,0 +1,35 @@
+.profile-card{
+  box-shadow: 17px 15px 15px rgb(0 0 0 / 40%);
+  margin: 10px;
+  background-color: rgba(100,100,100,0.7);
+  height: 550px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 25px 10px 40px;
+}
+.profile-name{
+  padding-top:10px;
+  text-shadow: 0 0 5px black;
+}
+
+.profile-image{
+  width : 300px;
+  height : auto;
+  box-shadow: 17px 15px 15px rgb(0 0 0 / 40%);
+  border-radius:5px;
+}
+
+.profile-infos{
+font-size:1.6rem;
+padding : 20px;
+}
+
+.profile-films{
+  font-size:1.4rem;
+  padding : 20px;
+}

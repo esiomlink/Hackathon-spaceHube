@@ -9,6 +9,8 @@ import Playvideo from "./components/PlayVideo";
 import Subscription from "./components/Subscription";
 import Pub from "./components/Pub.jsx";
 import Log from './views/Log';
+import Profile from './components/Profiles';
+
 function App() {
   const [log, setLog] = useState('');
   const [user, setUser] = useState('Login');

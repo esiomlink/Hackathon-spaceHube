@@ -36,8 +36,10 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
+
           <Link className="left-text-white" to="/">
             Acteurs
+
           </Link>
         </li>
       </ul>
