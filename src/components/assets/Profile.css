@@ -1,7 +1,7 @@
 .profile-card{
   box-shadow: 17px 15px 15px rgb(0 0 0 / 40%);
   margin: 10px;
-  background-color: rgba(100,100,100,0.7);
+  background: linear-gradient(217deg, #555555, #111111);
   height: 550px;
   width: 500px;
   display: flex;
