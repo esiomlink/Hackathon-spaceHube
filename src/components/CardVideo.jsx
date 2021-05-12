@@ -5,7 +5,6 @@ const videoLink = "https://images-assets.nasa.gov/video/";
 function CardVideo({preview}) {
     let history = useHistory();
     if (preview){
-        const tmpvid = `${videoLink}${preview.data[0].nasa_id}/${preview.data[0].nasa_id}~medium.mp4`;
         const tmpimg = `${videoLink}${preview.data[0].nasa_id}/${preview.data[0].nasa_id}~medium.jpg`;
         const OpenDetails = () => {
           history.push(`play/${preview.data[0].nasa_id}/${preview.data[0].title}/${preview.data[0].photographer}/${preview.data[0].date_created}/${preview.data[0].keywords}`)

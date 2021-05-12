@@ -1,12 +1,13 @@
 import {useState} from 'react';
 import LoginContext from './contexts/LoginContext';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route,  useRouteMatch } from "react-router-dom";
 import "./App.css";
 import Home from "./views/Home";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Playvideo from "./components/PlayVideo";
 import Subscription from "./components/Subscription";
+import Category from "./components/Category";
 import Pub from "./components/Pub.jsx";
 import Log from './views/Log';
 import Profile from './components/Profiles';
@@ -50,6 +51,12 @@ function App() {
             </LoginContext.Provider>
             <Pub />
             <Route path="/play/:id/:title/:autor/:date/:keywords" component={Playvideo} />
+            <Route path="/category/:cat">
+              <Category />
+            </Route>
+            <Route path="/premium/:cat">
+              <Category />
+            </Route>
           </div>
         </Router>
       </div>
