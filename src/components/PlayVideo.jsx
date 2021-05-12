@@ -7,8 +7,18 @@ function Playvideo() {
 
   const videoLink = "https://images-assets.nasa.gov/video/";
   let { id } = useParams();
+  let { title } = useParams();
+  let { autor } = useParams();
+  let { date } = useParams();
+  let { keywords } = useParams();
   const tmpvid = `${videoLink}${id}/${id}~medium.mp4`;
-  console.log(tmpvid)
+
+  title.split('_').join(' ').split(',').join(' ')
+  autor.split('_').join(' ').split(',').join(' ')
+  date.split('_').join(' ').split(',').join(' ')
+  keywords = keywords.split('_').join(' ').split(',').join(' #')
+  // keywords = keywords.replace(/[^\w\s]/gi, '')
+  // console.log(typeof {keywords})
   return (
     <div className="mainWrap">
       <div className="wrapper">
@@ -20,12 +30,10 @@ function Playvideo() {
         />
         <div className="infoVideo">
           <div>
-            <a href="#">#react </a>
-            <a href="#">#react </a>
-            <a href="#">#react </a>
+            <a href="#">#{keywords} </a>
           </div>
-          <h1>Title title title</h1>
-          <p>60 884 vues•Diffusée en direct le 29 juil. 2020</p>
+          <h1>{title}</h1>
+          <p>{autor ? "Anonym" : autor} • 60 884 vues • Diffusée en direct le {date}</p>
         </div>
         <span id='separator'></span>
       </div>
