@@ -29,17 +29,19 @@ function fetchApi(){
     return (
       <>
         {isMageur && (
-          <div className="blur">
+          <div className='blur'>
             <div className='majeur'>
               <h1>SpaceHub est un site Internet réservé aux robots mature !</h1>
               <h2>
-                SpaceHub est strictement limité aux rovers de plus de 18 ans
-                ou ayant l'âge légal dans votre juridiction, l'âge le plus élevé
+                SpaceHub est strictement limité aux rovers de plus de 18 ans ou
+                ayant l'âge légal dans votre juridiction, l'âge le plus élevé
                 étant retenu.
               </h2>
               <div className='btn-majeur'>
                 <button onClick={() => handleMajeur()}>Entrer</button>
-                <button>Sortir</button>
+                <a href='https://tlse0321-js-p2-little-hero-academy.vercel.app/'>
+                  <button>Sortir</button>
+                </a>
               </div>
             </div>
           </div>
