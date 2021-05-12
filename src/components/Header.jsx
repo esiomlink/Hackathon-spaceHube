@@ -10,7 +10,7 @@ const Header = ({search, handleSearch, handleQuery}) => {
   return (
     <header className='header'>
       <img
-        src='http://assets.stickpng.com/images/5842a770a6515b1e0ad75afe.png'
+        src='/logo.png'
         alt='SpaceHub'
       />
       <div className='leftNav'>
