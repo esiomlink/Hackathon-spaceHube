@@ -18,20 +18,20 @@ export default function Navbar() {
           </a>
           {showCategories ? (
             <ul className="submenu">
-              <li>Gros Réservoirs</li>
-              <li>RILF</li>
-              <li>Joint de Culasse</li>
-              <li>Uranus</li>
+              <Link to="/category/tank"><li>Gros Réservoirs</li></Link>
+              <Link to="/category/apollo%2011"><li>RILF</li></Link>
+              <Link to="/category/engine"><li>Joint de Culasse</li></Link>
+              <Link to="/category/planets"><li>Uranus</li></Link>
             </ul>
           ) : null}
         </li>
         <li>
-          <Link className="left-text-white" to="/">
+          <Link className="left-text-white" to="/category/2021">
             Dernières Vidéos
           </Link>
         </li>
         <li>
-          <Link className="left-text-white" to="/">
+          <Link className="left-text-white" to="/premium/perseverance">
             Vidéos Premium
           </Link>
         </li>
