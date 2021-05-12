@@ -37,9 +37,8 @@ export default function Navbar() {
         </li>
         <li>
 
-          <Link className="left-text-white" to="/">
+          <Link className="left-text-white" to="/Actors">
             Acteurs
-
           </Link>
         </li>
       </ul>
