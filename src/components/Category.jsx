@@ -24,25 +24,33 @@ function Category() {
       .then((r) => setVideos(r));
   }
   let str = "";
-  switch (cat ) {
-    case 'tank':
-      str = "Gros réservoir"
+  switch (cat) {
+    case "tank":
+      str = "Gros réservoir";
       break;
-    case 'apollo 11':
-      str = "RILF"
+    case "apollo 11":
+      str = "RILF";
       break;
-    case 'engine':
-      str = "Joint de cullase"
+    case "engine":
+      str = "Joint de culasse";
+      break;
+    case "2021":
+      str = "Dernières Videos";
+      break;
+    case "perseverance":
+      str = "Premium videos";
       break;
     default:
-      str = "Uranus"
+      str = "Uranus";
   }
   return (
     <>
       <div className="button-container">
         <NavButton page={page} setPage={setPage} />
       </div>
-       <h1 style={{textAlign:'center', fontSize: '2rem', margin:'1rem'}}>{str}</h1>
+      <h1 style={{ textAlign: "center", fontSize: "2rem", margin: "1rem" }}>
+        {str}
+      </h1>
       <div className="gridVideo">
         {videos && videos.map((e) => <CardVideo preview={e} />)}
       </div>
