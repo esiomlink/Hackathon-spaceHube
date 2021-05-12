@@ -1,11 +1,10 @@
-
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import LoginContext from '../contexts/LoginContext';
 import './assets/header.css';
-import "./assets/header.css";
+import './assets/header.css';
 
-
-const Header = ({search, handleSearch, handleQuery}) => {
+const Header = ({ search, handleSearch, handleQuery }) => {
   const { user } = useContext(LoginContext);
   return (
     <header className='header'>
@@ -30,9 +29,9 @@ const Header = ({search, handleSearch, handleQuery}) => {
             🔎
           </button>
         </form>
-        <button className='login'>
-          {user}
-        </button>
+        <Link className='login' to='/log'>
+          <button className='login'>{user}</button>
+        </Link>
         <button className='premium'>Premium</button>
       </div>
     </header>
