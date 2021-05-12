@@ -4,7 +4,7 @@ export default function DisplayProfile(actor) {
   return (
     <div className="profile-card">
       <img className="profile-image" src={actor.image} alt={actor.name} />
-      <h2>{actor.name}</h2>
+      <h2 className="profile-name">{actor.name}</h2>
       <div className = "profile-infos">
         <p>
           <em>Age : </em>

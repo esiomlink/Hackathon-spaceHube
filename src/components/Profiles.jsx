@@ -34,7 +34,11 @@ const curiosityX = new Actor(
   23,
   11,
   img2,
-  ["Ca dérouille !", "un peu de WD40 ?", "Slip, tongues et chenilles huilées"],
+  [
+    "Ca dérouille !",
+    "un peu de WD40 ?", 
+    "Slip, tongues et chenilles huilées"
+  ],
   114000
 );
 const rovtsumi = new Actor(
@@ -43,7 +47,7 @@ const rovtsumi = new Actor(
   19,
   img3,
   [
-    "Fais jaillir ton pétrole pour des robots",
+    "Faut que ça grince !",
     "j'ai pas la vie d'ange",
     "rot vert",
   ],

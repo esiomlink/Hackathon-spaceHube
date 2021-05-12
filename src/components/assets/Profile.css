@@ -2,7 +2,7 @@
   box-shadow: 17px 15px 15px rgb(0 0 0 / 40%);
   margin: 10px;
   background-color: rgba(100,100,100,0.7);
-  height: 500px;
+  height: 550px;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,10 @@
   align-items: center;
   justify-content: center;
   border-radius: 5px 25px 10px 40px;
+}
+.profile-name{
+  padding-top:10px;
+  text-shadow: 0 0 5px black;
 }
 
 .profile-image{
