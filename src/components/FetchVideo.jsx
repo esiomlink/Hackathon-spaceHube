@@ -20,7 +20,7 @@ function fetchApi(){
   .then((r) => r.data.collection.items)
   .then((r) => setVideos(r));
 }
-
+  
   if (videos){
     return (
       <>
