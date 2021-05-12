@@ -9,6 +9,55 @@
     align-content: flex-start;
     color: black;
 }
+.blur{
+    position: fixed;
+   width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    left: 15rem;
+    backdrop-filter: blur(5px);
+}
+.majeur{
+
+    position: fixed;
+    color: aliceblue;
+    text-align: center;
+    width: 30rem;
+    height: 30rem;
+    border: 1px solid;
+    display: flex;
+    left: 40%;
+    top:12rem;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+.majeur h1{
+    color: #F79301;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+}
+.majeur h2{
+
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+}
+.majeur button{
+    cursor: pointer;
+    color:black;
+    margin:2rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.majeur button:hover{
+    background-color: #F79301;
+}
 a{
     text-decoration: none;
     color:black;
