@@ -39,6 +39,9 @@ function App() {
             <Route path="/" exact>
               <Home query={query} />
             </Route>
+            <Route path="/Actors" exact>
+            <Profile/>
+          </Route>
             <Route path="/sub" component={Subscription} />
             <LoginContext.Provider
               value={{ log: log, setLog: setLog, setUser: setUser }}
