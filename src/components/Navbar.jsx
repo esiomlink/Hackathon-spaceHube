@@ -10,34 +10,42 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar-left">
-      <ul className="left-menu">
+    <nav className='navbar-left'>
+      <ul className='left-menu'>
         <li>
-          <a className="left-text-white" onClick={handleCategoriesClick}>
-            Catégories <i className="fas fa-sort-down fas-arrow" />
-          </a>
-          {showCategories ? (
-            <ul className="submenu">
-              <Link to="/category/tank"><li>Gros Réservoirs</li></Link>
-              <Link to="/category/apollo%2011"><li>RILF</li></Link>
-              <Link to="/category/engine"><li>Joint de Culasse</li></Link>
-              <Link to="/category/planets"><li>Uranus</li></Link>
-            </ul>
-          ) : null}
-        </li>
-        <li>
-          <Link className="left-text-white" to="/category/2021">
+          <Link className='left-text-white' to='/category/2021'>
             Dernières Vidéos
           </Link>
         </li>
         <li>
-          <Link className="left-text-white" to="/premium/perseverance">
+          <a className='left-text-white' onClick={handleCategoriesClick}>
+            Catégories <i className='fas fa-sort-down fas-arrow' />
+          </a>
+          {showCategories ? (
+            <ul className='submenu'>
+              <Link to='/category/tank'>
+                <li>Gros Réservoirs</li>
+              </Link>
+              <Link to='/category/apollo%2011'>
+                <li>RILF</li>
+              </Link>
+              <Link to='/category/engine'>
+                <li>Joint de Culasse</li>
+              </Link>
+              <Link to='/category/planets'>
+                <li>Uranus</li>
+              </Link>
+            </ul>
+          ) : null}
+        </li>
+
+        <li>
+          <Link className='left-text-white' to='/premium/perseverance'>
             Vidéos Premium
           </Link>
         </li>
         <li>
-
-          <Link className="left-text-white" to="/Actors">
+          <Link className='left-text-white' to='/Actors'>
             Acteurs
           </Link>
         </li>
