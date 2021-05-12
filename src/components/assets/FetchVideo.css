@@ -65,3 +65,7 @@ a{
 .buttons{
     background-color:black;
 }
+#separator{
+    width: 100%;
+    border: rgba(211, 211, 211, 0.384) solid 1px;
+}
