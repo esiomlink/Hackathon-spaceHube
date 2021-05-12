@@ -12,9 +12,9 @@
 .blur{
     position: fixed;
    width: 80%;
-    margin: 0 auto;
+    margin:0 auto;
     height: 100%;
-    left: 15rem;
+    left: 18rem;
     backdrop-filter: blur(5px);
 }
 .majeur{
