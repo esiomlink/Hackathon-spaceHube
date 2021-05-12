@@ -14,7 +14,7 @@ export default function NavButton({page, setPage}) {
           prev
         </button>
       </div>
-      <p>{page}</p>
+      <p className="count">{page}</p>
       <div>
         <button type='submit' className='buttons' onClick={accu}>
           next

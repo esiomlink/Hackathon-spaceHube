@@ -7,7 +7,21 @@
   margin-top: 2rem;
 }
 .buttons{
-  width: 5rem;
-  height: 2rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background-color: #F79301;
+  color: black;
+  cursor: pointer;
+  border: 3px solid black;
+  width: 7rem;
+  height: 2.5rem;
   margin: 2rem;
+
+}
+.count{
+  font-size: 2rem;
+  color: aliceblue;
+}
+.buttons:hover{
+  background-color: #ddb578;
 }
