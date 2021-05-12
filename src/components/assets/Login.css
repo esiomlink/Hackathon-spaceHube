@@ -11,7 +11,9 @@
   margin-bottom: 50rem;
   border: 1px solid gray;
 }
-
+.user h1{
+  font-size: 1.5rem;
+}
 .user h4{
   margin-bottom: 3rem;
 }
@@ -20,6 +22,7 @@
   width: 17rem;
   margin: 1rem;
   padding: 1rem;
+  color: black;
 }
 
 .user button{
