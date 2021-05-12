@@ -1,18 +1,22 @@
-.profile-cards{
-  display: flex;
+.profile-card{
+  background-color: rgba(100,100,100,0.7);
+  height: 500px;
+  width:500px;
+  display:flex;
   flex-direction: column;
-  width : 90%;
-  align-items: center;
-  padding : 20px;
+}
 
-}
 .profile-image{
-  height : 500px;
-  width : auto;
+  width : 300px;
+  height : auto;
 }
+
 .profile-infos{
+font-size:1.6rem;
 padding : 20px;
 }
+
 .profile-films{
+  font-size:1.4rem;
   padding : 20px;
 }

@@ -7,15 +7,15 @@ export default function DisplayProfile(actor) {
       <h2>{actor.name}</h2>
       <div className = "profile-infos">
         <p>
-          <span>Age : </span>
+          <em>Age : </em>
           {actor.age}
         </p>
         <p>
-          <span>Niveau d'huile : </span>
+          <em>Niveau d'huile : </em>
           {actor.oilLevel}
         </p>
         <p>
-          <span>Kilomètres au compteur : </span>
+          <em>Kilomètres au compteur : </em>
           {actor.kilometers}
         </p>
       </div>
