@@ -4,14 +4,17 @@ import { useParams } from 'react-router-dom';
 import "./assets/playvideo.css";
 
 function Playvideo() {
-  let { video } = useParams();
-  console.log(video)
+
+  const videoLink = "https://images-assets.nasa.gov/video/";
+  let { id } = useParams();
+  const tmpvid = `${videoLink}${id}/${id}~medium.mp4`;
+  console.log(tmpvid)
   return (
     <div className="mainWrap">
       <div className="wrapper">
         <ReactPlayer
-          url="https://images-assets.nasa.gov/video/JPL-20200617-M2020f-0002-L-30%20Perseverance%20Video%20File/JPL-20200617-M2020f-0002-L-30%20Perseverance%20Video%20File~medium.mp4"
-          controls="true"
+          url={tmpvid}
+          controls={true}
           wrapper="div"
           playing
         />

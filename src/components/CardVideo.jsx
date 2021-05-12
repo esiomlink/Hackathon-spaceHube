@@ -8,7 +8,7 @@ function CardVideo({preview}) {
         const tmpvid = `${videoLink}${preview.data[0].nasa_id}/${preview.data[0].nasa_id}~medium.mp4`;
         const tmpimg = `${videoLink}${preview.data[0].nasa_id}/${preview.data[0].nasa_id}~medium.jpg`;
         const OpenDetails = () => {
-          history.push(`play/${tmpvid}`)
+          history.push(`play/${preview.data[0].nasa_id}`)
         }
         
     return (

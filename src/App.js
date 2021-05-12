@@ -32,7 +32,7 @@ function App() {
               <Home query={query} />
             </Route>
             <Route path="/sub" component={Subscription} />
-            <Route path="/play/:video" component={Playvideo} />
+            <Route path="/play/:id" component={Playvideo} />
             <Pub />
           </div>
         </Router>
