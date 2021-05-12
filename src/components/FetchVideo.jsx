@@ -5,11 +5,10 @@ import './assets/FetchVideo.css';
 import './assets/NavButtons.css';
 import NavButton from "./NavButtons";
 
-export default function FetchVideo({search}) {
+export default function FetchVideo({search, setIsMageur, isMageur}) {
   const [videos, setVideos] = useState();
   const [page, setPage] = useState(1);
-  const [isMageur, setIsMageur] = useState(true);
-  console.log(isMageur)
+
  
   const handleMajeur=()=>{
     setIsMageur(false)
